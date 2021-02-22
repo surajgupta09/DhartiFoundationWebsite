@@ -1,0 +1,216 @@
+body {
+    background-color: #99aa7d;
+    z-index: -2;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #030;
+}
+
+#individual {
+    display: none;
+}
+
+.forms .tab-group {
+    list-style: none;
+}
+
+.forms .tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.forms .tab-group li a {
+    display: inline;
+    text-decoration: none;
+    padding: 15px;
+    background: #e5e6e7;
+    color: #888;
+    font-size: 20px;
+    float: right;
+    margin: 1px auto;
+    max-width: 40%;
+    text-align: center;
+    border-top: 3px solid transparent;
+}
+
+.forms .tab-group li a:hover {
+    background-color: #dedfdf;
+    color: #666;
+}
+
+.forms .tab-group .active a {
+    background-color: #fff;
+    color: #444;
+    border-top: 3px solid #73cf41;
+}
+
+form {
+    display: block;
+    max-width: 90%;
+    margin: 30px auto;
+    position: relative;
+    border-radius: 30px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    display: block;
+    margin-top: 1px;
+    padding: 5px;
+    text-align: center;
+    font-size: 300%;
+    color: rgb(2, 87, 2);
+    box-shadow: 1px 1px 10px;
+    background-color: #d0dfe8;
+}
+
+input,
+select,
+label {
+    outline: none;
+}
+
+.form-inner {
+    padding: 40px;
+}
+
+.form-inner input,
+select {
+    display: inline;
+    width: 25%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d0dfe8;
+}
+
+.form-inner input#email {
+    width: 40%;
+}
+
+.form-inner input#orgz,
+input#indi {
+    display: inline-block;
+    width: 10px;
+}
+
+.form-inner span {
+    color: #030;
+    display: inline-block;
+    width: 5%;
+    text-align: left;
+    font-size: large;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid #3e4f24;
+    background-color: #5a7233;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+button:hover {
+    background: #3e4f24;
+}
+
+.form-inner #agree {
+    max-width: 10px;
+    display: inline;
+}
+
+.form-inner a {
+    color: #030;
+}
+
+.form-inner label {
+    display: inline-block;
+    width: 30%;
+    font-size: larger;
+}
+
+.form-inner label#st {
+    width: 20%;
+}
+
+.form-inner label#add {
+    width: 20%;
+}
+
+.form-inner label#dst {
+    width: 20%;
+    text-align: center;
+}
+
+.form-inner label#pincode {
+    width: 20%;
+}
+
+.form-inner input#address {
+    width: 60%;
+}
+
+.form-inner select#country-code {
+    width: 12%;
+}
+
+.form-inner select#subject {
+    width: 40%;
+}
+
+.form-inner input#chkYes {
+    max-width: 20px;
+}
+
+.form-inner input#chkNo {
+    max-width: 20px;
+}
+
+.form-inner input#chkYesOrg {
+    max-width: 20px;
+}
+
+.form-inner input#chkNoOrg {
+    max-width: 20px;
+}
+
+@media (max-width:700px) {
+    .form-inner input,
+    select,
+    label {
+        display: block;
+        width: 80%;
+    }
+    .form-inner span {
+        display: block;
+    }
+    .form-inner input#email {
+        width: 80%;
+    }
+    .form-inner select#subject {
+        width: 85%;
+    }
+    .form-inner label {
+        width: 100%;
+    }
+    .form-inner select#country-code {
+        width: 50%;
+    }
+    .form-inner label#pincode {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    form,
+    span {
+        font-size: 0.9em;
+    }
+}

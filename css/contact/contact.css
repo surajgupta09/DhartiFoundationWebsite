@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.jumbotron {
+    text-align: center;
+    background: #1d976c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient( to right, #93f9b9, #1d976c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( to right, #19d645c4, #177a2e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+.jumbotron h1 {
+    font-weight: 700;
+}
+
+h2,
+h6 {
+    text-align: center;
+}
+
+.con {
+    margin-top: 10px;
+}
+
+.map {
+    margin: 0 auto;
+    width: 350px;
+    margin-bottom: 5px;
+}
+
+.map-p {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 350px;
+    font-size: smaller;
+}
+
+.map-p i {
+    margin-right: 5px;
+}
+
+h5 {
+    font-weight: bold;
+    text-align: center;
+}
+
+textarea {
+    height: 100px;
+}
+
+form {
+    margin: 20px auto;
+    width: 350px;
+}
+
+.btn {
+    width: 100%;
+}
+
+.links {
+    margin: 20px auto;
+    width: 350px;
+    font-size: larger;
+    text-align: center;
+}
+
+.links-h {
+    font-weight: 700;
+}
+
+.links i {
+    margin: 0 10px;
+}
+
+.links i:hover {
+    color: #28a745;
+    font-size: larger;
+    cursor: pointer;
+}

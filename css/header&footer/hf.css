@@ -1,0 +1,342 @@
+    /*navbar styling starts here*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    nav {
+        height: 6rem;
+        width: 100vw;
+        background-color: #008000;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+        display: flex;
+        position: fixed;
+        z-index: 100000;
+    }
+    /*Styling logo*/
+    
+    .logo {
+        padding: 1vh 1vw;
+        text-align: center;
+    }
+    
+    .logo img {
+        height: 5rem;
+        width: 5rem;
+        padding: 10px;
+    }
+    /*Styling Links*/
+    
+    .nav-links {
+        display: flex;
+        list-style: none;
+        width: 88vw;
+        padding: 0 0.7vw;
+        justify-content: space-evenly;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    
+    .nav-links li a {
+        text-decoration: none;
+        margin: 0 0.7vw;
+    }
+    
+    .nav-links li a:hover {
+        background: #fff;
+        padding: 8px 12px;
+        border-radius: 20px;
+    }
+    
+    .nav-links li {
+        position: relative;
+    }
+    
+    .nav-links li a::before {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0%;
+        position: absolute;
+        margin: 0 0 0 10%;
+    }
+    
+    .nav-links li a:hover::before {
+        width: 80%;
+    }
+    
+    #navhead {
+        color: #fff;
+    }
+    
+    #navhead:hover {
+        color: #000;
+    }
+    /*Styling Buttons*/
+    
+    .donate-button {
+        color: #131418;
+        background-color: #fff;
+        border: 1.5px solid #fff;
+        border-radius: 2em;
+        padding: 0.6rem 0.8rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    .donate-button:hover {
+        color: #f2f5f7;
+        background-color: transparent;
+        border: 1.5px solid #f2f5f7;
+        transition: all ease-in-out 350ms;
+    }
+    /*Styling Hamburger Icon*/
+    
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background: #f2f5f7;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        text-align: center;
+        margin-top: 5px;
+        display: none;
+        position: absolute;
+        background-color: #008000;
+        border-radius: 20px;
+        min-width: 210px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    
+    .dropdown-content p {
+        color: #fff;
+        padding: 2px;
+        font-size: 13px;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown-content p:hover {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+    /*Stying for small screens*/
+    
+    @media screen and (max-width: 800px) {
+        .nav-links li a:hover {
+            background: #fff;
+            padding: 8px 12px;
+            border-radius: 20px;
+        }
+        nav {
+            position: fixed;
+            z-index: 3;
+        }
+        .hamburger {
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 50%;
+            transform: translate(-5%, -50%);
+            z-index: 2;
+            transition: all 0.7s ease;
+        }
+        .nav-links {
+            position: fixed;
+            background: #008000;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(50px at 90% -20%);
+            -webkit-clip-path: circle(50px at 90% -10%);
+            transition: all 1s ease-out;
+            pointer-events: none;
+        }
+        .nav-links.open {
+            clip-path: circle(1000px at 90% -10%);
+            -webkit-clip-path: circle(1000px at 90% -10%);
+            pointer-events: all;
+        }
+        .nav-links li:nth-child(1) {
+            transition: all 0.5s ease 0.2s;
+        }
+        .nav-links li:nth-child(2) {
+            transition: all 0.5s ease 0.4s;
+        }
+        .nav-links li:nth-child(3) {
+            transition: all 0.5s ease 0.6s;
+        }
+        .nav-links li:nth-child(4) {
+            transition: all 0.5s ease 0.7s;
+        }
+        .nav-links li:nth-child(5) {
+            transition: all 0.5s ease 0.8s;
+        }
+        .nav-links li:nth-child(6) {
+            transition: all 0.5s ease 0.9s;
+            margin: 0;
+        }
+        .nav-links li:nth-child(7) {
+            transition: all 0.5s ease 1s;
+            margin: 0;
+        }
+        li.fade {
+            opacity: 1;
+        }
+    }
+    /*Animating Hamburger Icon on Click*/
+    
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .toggle .line2 {
+        transition: all 0.7s ease;
+        width: 0;
+    }
+    
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    /*navbar styling ends here*/
+    
+    .wrapper {
+        min-height: 100%;
+        padding-top: 96px;
+    }
+    /*footer styling starts here*/
+    
+    footer {
+        margin-top: 5em !important;
+        text-align: center;
+        padding: 2em 2em 0em 2em !important;
+        background-color: #008000;
+        color: white;
+        position: relative;
+    }
+    
+    .back-to-top {
+        width: 7rem;
+        height: 7rem;
+        background-color: #008000;
+        position: absolute;
+        top: -3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        text-decoration: none;
+    }
+    
+    .back-to-top i {
+        display: block;
+        color: white;
+        font-size: 2rem;
+        padding: 2rem;
+        margin-bottom: 0;
+        animation: up 2s infinite;
+        text-decoration: none;
+    }
+    
+    .footer-content {
+        margin-top: 40px;
+        text-decoration: none;
+    }
+    
+    .footer-content h5 {
+        color: aliceblue;
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    
+    .backagain a {
+        text-decoration: none;
+    }
+    
+    .footer-content h6 {
+        font-weight: 400;
+        color: aliceblue;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-content-about ul li a {
+        text-decoration: none;
+    }
+    
+    #social_icons {
+        margin: 10px;
+        padding: 0 2em 0 2em;
+    }
+    
+    #social_icons i {
+        color: aliceblue !important;
+    }
+    
+    #social_icons i:hover {
+        transition: .4s;
+        transform: scale(1.1);
+    }
+    
+    @media screen and (min-width: 740px) {
+        .designed {
+            align-content: center;
+            text-align: center;
+            margin-top: 3em;
+            padding-left: 9vw !important;
+            padding-right: 9vw !important;
+        }
+    }
+    
+    @media screen and (max-width: 700px) {
+        .footer-content h5 {
+            margin-top: 10px;
+        }
+        .designed {
+            margin-left: -2.7em !important;
+            padding-left: 1em !important;
+            padding-right: 1em !important;
+            margin-top: 1em;
+            padding: 20px !important;
+        }
+    }
+    
+    @keyframes up {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-1rem);
+        }
+        /*!important*/
+    }
+    /*footer styling ends here*/
